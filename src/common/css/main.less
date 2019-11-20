@@ -1,0 +1,106 @@
+@charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6, form, legend, input, button,
+textarea, p,th,td,ul, menu, dir{margin:0;padding:0;font-size:100%;/*background:transparent;*/}
+h1, h2, h3, h4, h5, h6{font-size:100%;font-weight:normal;}
+fieldset, img{border:none;}
+img{vertical-align:top;display:block;width:100%;-webkit-touch-callout: none;}
+canvas{display: block;}
+ol, ul,li{list-style:none outside none;}
+table{border-collapse:collapse;border-spacing:0;}
+input, select{vertical-align:middle;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+abbr[title], dfn[title] {border-bottom:1px dotted;cursor:help;}
+sub,sup{font-size:70%;line-height:0;position:relative;vertical-align:baseline;}
+sup{top:-0.5em;}
+sub{bottom:-0.25em;}
+button, input, textarea{-webkit-user-modify: read-write-plaintext-only;}
+input,button,select,textarea{outline:none}
+textarea{resize:none}
+html{-webkit-text-size-adjust:none;}
+body{background-color:#000;color:#fff;font-family:Arial,"微软雅黑",Verdana,sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+a{text-decoration:none;color:#fff;-webkit-transition: all 0.25s ease;-moz-transition: all 0.25s ease;transition: all 0.25s ease;}
+a:hover,a:active{color:#fff;outline-width: 0}
+a:visited{color:#fff;}
+/*a:visited{color:#fff;}*/
+.clearfix:after {content:"\20"; display:block; height:0; clear:both; visibility:hidden; }
+.clearfix{display:inline-block;}
+audio{display: none;}
+html,body{
+	overflow: hidden;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	bottom:0;
+	right: 0;
+	background: #000;
+	height:100%;
+}
+
+
+
+
+#toploader {
+  background: #000 none repeat scroll 0 0;
+  display: block;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+#toploader .loadingtext {
+  color: #fff;
+  font-size: 14px;
+  height: 60px;
+  left: 50%;
+  margin-left: -30px;
+  margin-top: -30px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 60px;
+}
+#toploader .loadingtext span {
+  left: 0;
+  position: absolute;
+  top: 23px;
+  width: 100%;
+}
+/*声明 WebFont*/
+@font-face { /*english copy font*/
+	font-family: 'Corpos';
+	src: url('../fonts/CorporateS-Light.otf');
+	src: url('../fonts/CorporateS-Light.otf?#iefix') format('embedded-opentype'),
+	url('../fonts/CorporateS-Light.otf') format('woff'),
+	url('../fonts/CorporateS-Light.otf') format('truetype')
+}
+
+@font-face { /*chinese copy font*/
+	font-family:'DaimlerCS-Light';
+	src:url('../fonts/HYZhongSongJZW.eot');
+	src:url('../fonts/HYZhongSongJZW.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/HYZhongSongJZW.woff') format('woff'),
+	url('../fonts/HYZhongSongJZW.ttf') format('truetype')
+}
+@font-face { /*chinese title font*/
+	font-family:'DaimlerCAC-Regular';
+	src:url('../fonts/HYZhongSongJBT.eot');
+	src:url('../fonts/HYZhongSongJBT.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/HYZhongSongJBT.woff') format('woff'),
+	url('../fonts/HYZhongSongJBT.ttf') format('truetype')
+}
+@font-face { /*english title font*/
+	font-family:'CorporateACondensedRegular';
+	src:url('../fonts/corporateacon-reg-webfont.eot');
+	src:url('../fonts/corporateacon-reg-webfont.ttf') format('truetype');
+}
+
+/*使用选择器指定字体*/
+.font-tit {
+    font-family: 'CorporateACondensedRegular', 'DaimlerCAC-Regular', 'microsoft yahei';
+}
+.font-cont{
+	font-family: 'Corpos', 'DaimlerCS-Light','microsoft yahei';
+}
